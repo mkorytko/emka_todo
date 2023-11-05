@@ -1,0 +1,7 @@
+.idea/
+.temp_cache/
+node_modules/
+public_html/
+dist
+
+.editorconfig

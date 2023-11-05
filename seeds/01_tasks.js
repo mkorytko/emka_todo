@@ -1,0 +1,77 @@
+exports.seed = function seeds(knex) {
+    return knex("tasks").del()
+        .then(() => {
+            return knex("tasks").insert([
+                {
+                    id: 1,
+                    name: "Joe",
+                    email: "joe@example.org",
+                    task: "Joe lorem ipsum",
+                    edited: 0,
+                    done: 0,
+                    created_at: new Date().toISOString(),
+                    updated_at: new Date().toISOString(),
+                },
+                {
+                    id: 2,
+                    name: "Jane",
+                    email: "jane@example.org",
+                    task: "Jane lorem ipsum",
+                    edited: 0,
+                    done: 0,
+                    created_at: new Date().toISOString(),
+                    updated_at: new Date().toISOString(),
+                },
+                {
+                    id: 3,
+                    name: "Jack",
+                    email: "jack@example.org",
+                    task: "Jack lorem ipsum",
+                    edited: 0,
+                    done: 0,
+                    created_at: new Date().toISOString(),
+                    updated_at: new Date().toISOString(),
+                },
+                {
+                    id: 4,
+                    name: "Jim",
+                    email: "jim@example.org",
+                    task: "Jim lorem ipsum",
+                    edited: 0,
+                    done: 0,
+                    created_at: new Date().toISOString(),
+                    updated_at: new Date().toISOString(),
+                },
+                {
+                    id: 5,
+                    name: "Tim",
+                    email: "3Tim@example.org",
+                    task: "Tim lorem ipsum",
+                    edited: 0,
+                    done: 0,
+                    created_at: new Date().toISOString(),
+                    updated_at: new Date().toISOString(),
+                },
+                {
+                    id: 6,
+                    name: "Sam",
+                    email: "LongLongLongSoLongMail@example.org",
+                    task: "Sam lorem ipsum Sam lorem ipsum Sam lorem ipsum Sam lorem ipsum Sam lorem ipsum Sam lorem ipsum Sam lorem ipsum Sam lorem ipsum",
+                    edited: 0,
+                    done: 0,
+                    created_at: new Date().toISOString(),
+                    updated_at: new Date().toISOString(),
+                },
+                {
+                    id: 7,
+                    name: "Очень длинное имя и даже фамилия с отчеством",
+                    email: "ERaf@example.org",
+                    task: "Raf lorem ipsum",
+                    edited: 0,
+                    done: 0,
+                    created_at: new Date().toISOString(),
+                    updated_at: new Date().toISOString(),
+                },
+            ]);
+        });
+};
